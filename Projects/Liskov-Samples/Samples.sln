@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2035
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Liskov", "Liskov\Liskov.csproj", "{FC479B96-DF4C-49D8-BBF2-16904FA59724}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FC479B96-DF4C-49D8-BBF2-16904FA59724}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC479B96-DF4C-49D8-BBF2-16904FA59724}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC479B96-DF4C-49D8-BBF2-16904FA59724}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC479B96-DF4C-49D8-BBF2-16904FA59724}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1E7F3C7D-EB4E-49E7-AFDA-93D85770B30B}
+	EndGlobalSection
+EndGlobal
