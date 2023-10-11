@@ -1,0 +1,54 @@
+@hostname=localhost
+@port=60439
+@host={{hostname}}:{{port}}
+@cartId=13b3c24e-e817-4547-b1f5-64b25b279adb
+
+### Get all charts (only DEBUG)
+GET https://{{host}}/carts
+
+### Create a new shopping cart
+POST https://{{host}}/carts
+Content-Type: application/json
+
+{
+  "id" : "13b3c24e-e817-4547-b1f5-64b25b279adb",
+  "customerId" : "00000000-0000-0000-0000-000000000001"
+}
+
+### Create a new shopping cart (invalid, for tests)
+POST https://{{host}}/carts
+Content-Type: application/json
+
+{
+  "id" : "00000000-0000-0000-0000-000000000000"
+}
+
+### Get specific shopping cart
+GET https://{{host}}/carts/{{cartId}}
+
+### Add item to shopping chart
+POST https://{{host}}/carts/{{cartId}}/items
+Content-Type: application/json
+
+{
+  "cartId" : "{{cartId}}",
+  "productId" : "31a3c24e-f317-1237-31cd-34413d4ecadb",
+  "amount" : 1
+}
+
+### Apply coupon to shopping cart
+POST https://{{host}}/carts/{{cartId}}/coupon
+Content-Type: application/json
+
+{
+  "cartId" : "{{cartId}}",
+  "name" : "HALFPRICE"
+}
+
+### Checkout shopping cart
+POST https://{{host}}/carts/{{cartId}}/checkout
+Content-Type: application/json
+
+{
+  "cartId" : "{{cartId}}"
+}
